@@ -41,21 +41,21 @@ cacheSolve <- function(x, ...) {
 
 
 # Test case
-mat1 <- matrix(c(1,0,0,1),2)
-mat2 <- matrix(c(1,2,3,4),2)
-mat3 <- matrix(c(126,301,762,510),2)
-for (mat in list(mat1, mat2, mat3)){
-  message("Test case")
-  a <- makeCacheMatrix()
-  a$set(mat)
-  # first time - no cache
-  print(cacheSolve(a)) 
-  # second time - access cached data
-  print(cacheSolve(a)) 
-  # compare with the build-in solve() result
-  message("compare with the build-in solve() result")
-  print(cacheSolve(a) == solve(mat)) 
-}
+# mat1 <- matrix(c(1,0,0,1),2)
+# mat2 <- matrix(c(1,2,3,4),2)
+# mat3 <- matrix(c(126,301,762,510),2)
+# for (mat in list(mat1, mat2, mat3)){
+#   message("Test case")
+#   a <- makeCacheMatrix()
+#   a$set(mat)
+#   # first time - no cache
+#   print(cacheSolve(a)) 
+#   # second time - access cached data
+#   print(cacheSolve(a)) 
+#   # compare with the build-in solve() result
+#   message("compare with the build-in solve() result")
+#   print(cacheSolve(a) == solve(mat)) 
+# }
 
 
 
